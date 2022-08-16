@@ -1,0 +1,43 @@
+
+:root {
+    --grid-size: 450px;
+    --margin-size: 10px;
+    --square-size: calc((var(--grid-size) / 3) - var(--margin-size));
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  #grid {
+    align-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: var(--grid-size);
+    width: var(--grid-size);
+  }
+  
+  #grid div {
+    background-color: red;
+    height: var(--square-size);
+    width: var(--square-size);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #grid div img {
+    width: 100%;
+  }
+
+  #x_text {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+  }
+
+  #T_btn {
+    margin-top: 10px;
+    margin-left: calc((var(--grid-size) / 2.5));
+  }
